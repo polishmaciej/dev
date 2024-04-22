@@ -66,16 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 slide.classList.remove('animation_stop');
             });
         });
-    });
 
-    document.addEventListener('click', function(event) {
-        containers.forEach(container => {
-            if (!container.contains(event.target)) {
-                const slides = container.querySelectorAll('.reviews__slide');
-                slides.forEach(slide => {
+        container.addEventListener('click', function(event) {
+            slides.forEach(slide => {
+                if (!container.contains(event.target)) {
                     slide.classList.remove('animation_stop');
-                });
-            }
+                }
+            });
         });
     });
 });
