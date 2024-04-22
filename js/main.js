@@ -55,17 +55,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const slides = container.querySelectorAll('.reviews__slide');
 
-        container.addEventListener('mouseenter', () => {
+        function stopAnimation() {
             slides.forEach(slide => {
                 slide.classList.add('animation_stop');
             });
-        });
+        }
 
-        container.addEventListener('mouseleave', () => {
+        function startAnimation() {
             slides.forEach(slide => {
                 slide.classList.remove('animation_stop');
             });
-        });
+        }
+
+        container.addEventListener('mouseenter', stopAnimation);
+        container.addEventListener('mouseleave', startAnimation);
+        container.addEventListener('touchstart', stopAnimation);
+        container.addEventListener('touchend', startAnimation);
+        document.addEventListener('click', startAnimation);
     });
 });
+
 
