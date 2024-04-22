@@ -79,14 +79,5 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-
-    document.addEventListener('click', () => {
-        containers.forEach(container => {
-            const slides = container.querySelectorAll('.reviews__slide');
-            slides.forEach(slide => {
-                slide.classList.remove('animation_stop');
-            });
-        });
-    });
 });
 
