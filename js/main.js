@@ -55,12 +55,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const slides = container.querySelectorAll('.reviews__slide');
 
-        container.addEventListener('click', function(event) {
+        container.addEventListener('mouseenter', () => {
             slides.forEach(slide => {
-                slide.classList.toggle('animation_stop');
+                slide.classList.add('animation_stop');
+            });
+        });
+
+        container.addEventListener('mouseleave', () => {
+            slides.forEach(slide => {
+                slide.classList.remove('animation_stop');
             });
         });
     });
 });
-
 
