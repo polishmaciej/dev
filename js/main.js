@@ -55,38 +55,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const slides = container.querySelectorAll('.reviews__slide');
 
-        function stopAnimation() {
+        container.addEventListener('mouseenter', function() {
             slides.forEach(slide => {
                 slide.classList.add('animation_stop');
             });
-        }
+        });
 
-        function startAnimation() {
+        container.addEventListener('mouseleave', function() {
             slides.forEach(slide => {
                 slide.classList.remove('animation_stop');
             });
-        }
-
-        container.addEventListener('mouseenter', stopAnimation);
-        container.addEventListener('mouseleave', startAnimation);
-
-        container.addEventListener('touchstart', function(event) {
-            if (event.target.closest('.reviews__slide')) {
-                stopAnimation();
-            }
-        });
-
-        container.addEventListener('touchend', function(event) {
-            if (event.target.closest('.reviews__slide')) {
-                startAnimation();
-            }
         });
     });
 
     document.addEventListener('click', function(event) {
-        if (!event.target.closest('.reviews__slide')) {
-            startAnimation();
-        }
+        containers.forEach(container => {
+            if (!container.contains(event.target)) {
+                const slides = container.querySelectorAll('.reviews__slide');
+                slides.forEach(slide => {
+                    slide.classList.remove('animation_stop');
+                });
+            }
+        });
     });
 });
 
