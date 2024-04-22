@@ -335,17 +335,17 @@ body {
   color: #fff;
   padding: 2em;
   height: 100vh;
-  background-image: url("../img/header_mini.jpg");
-  background-attachment: fixed;
+  background-image: url("./img/header_mini.jpg");
+  background-attachment: scroll;
   background-size: cover;
-  background-position: right 35% bottom 45%;
+  background-position: center;
   position: relative;
   z-index: 3;
 }
 .header__shadow {
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 4, 28, 0.8823529412);
+  background-color: rgba(10, 4, 28, 0.7333333333);
   position: absolute;
   z-index: -1;
 }
@@ -1579,9 +1579,6 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .header {
-    background-image: url("../img/header_big.jpg");
-  }
   .header__heading {
     font-weight: normal;
     font-size: 3.2rem;
@@ -1912,6 +1909,11 @@ body {
   }
 }
 @media (min-width: 992px) {
+  .header {
+    background-attachment: fixed;
+    background-position: right 35% bottom 45%;
+    background-image: url("../img/header_big.jpg");
+  }
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
