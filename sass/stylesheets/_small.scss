@@ -97,9 +97,9 @@
 			&-text {
 				font-size: 1.6rem;
 				color: #242424;
-				margin-left: 9px;
+				margin-left: 11px;
 				width: 360px;
-				margin-bottom: 17px;
+				margin-bottom: 18px;
 			}
 			&-btn {
 				font-size: 1.6rem;
@@ -221,12 +221,13 @@
 					font-size: 1.55rem;
 					position: relative;
 					margin-bottom: 7px;
+					margin-left: 15px;
 					&:before {
 						color: #181b61;
 						font-size: 2.45em;
-						margin-left: -0.7em;
-						top: -19.5px;
-						left: 2.5px;
+						margin-left: -21px;
+						top: -18px;
+						left: 1px;
 					}
 				}
 			}

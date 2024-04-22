@@ -668,17 +668,18 @@ body {
   width: 338px;
 }
 .container .portfolio__box-title {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   color: black;
   margin-left: 8px;
   font-weight: 600;
 }
 .container .portfolio__box-text {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #111111;
   margin-left: 9px;
   width: 320px;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
+  margin-top: 6px;
 }
 .container .portfolio__box-btn {
   font-size: 1.5rem;
@@ -688,7 +689,7 @@ body {
   display: inline;
   width: 153px;
   margin: 0 auto;
-  padding: 9px 12px;
+  padding: 10px 13px;
   border-radius: 4px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -702,7 +703,7 @@ body {
 }
 .container .portfolio__box-line {
   height: 0.2px;
-  min-width: 85%;
+  min-width: 75%;
   max-width: 350px;
   background-color: rgb(92, 92, 92);
   margin: 0 auto;
@@ -833,6 +834,7 @@ body {
 .workflow_container .text_box-title {
   font-size: 2.1rem;
   margin-bottom: 9px;
+  font-weight: 600;
 }
 .workflow_container .text_box ul {
   list-style-type: none;
@@ -841,6 +843,7 @@ body {
   font-size: 1.4rem;
   position: relative;
   margin-bottom: 7px;
+  margin-left: 13px;
 }
 .workflow_container .text_box-item:before {
   position: absolute;
@@ -848,8 +851,8 @@ body {
   color: #181b61;
   font-size: 2.3em;
   display: inline-block;
-  margin-left: -0.7em;
-  top: -15px;
+  margin-left: -18px;
+  top: -13px;
   left: 1px;
 }
 
@@ -1411,9 +1414,9 @@ body {
   .container .portfolio__box-text {
     font-size: 1.6rem;
     color: #242424;
-    margin-left: 9px;
+    margin-left: 11px;
     width: 360px;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
   .container .portfolio__box-btn {
     font-size: 1.6rem;
@@ -1569,13 +1572,14 @@ body {
     font-size: 1.55rem;
     position: relative;
     margin-bottom: 7px;
+    margin-left: 15px;
   }
   .workflow_container .text_box-item:before {
     color: #181b61;
     font-size: 2.45em;
-    margin-left: -0.7em;
-    top: -19.5px;
-    left: 2.5px;
+    margin-left: -21px;
+    top: -18px;
+    left: 1px;
   }
 }
 @media (min-width: 768px) {
@@ -1750,7 +1754,7 @@ body {
   .container .portfolio__box-text {
     font-size: 1.7rem;
     color: #111111;
-    margin-left: 9px;
+    margin-left: 12px;
     width: 420px;
     margin-bottom: 17px;
   }
@@ -1847,18 +1851,15 @@ body {
     font-size: 2.3rem;
   }
   .workflow_container .text_box-item {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .pricing .container {
     margin-top: 90px;
   }
   .pricing__box {
     width: 320px;
-    height: 450px;
-    border: 1px #fff solid;
-    border-radius: 7px;
-    margin-bottom: 60px;
-    padding: 20px 20px 20px 30px;
+    height: 430px;
+    padding: 20px 15px 20px 25px;
   }
   .pricing__box-title {
     font-size: 3.4rem;
@@ -1867,11 +1868,11 @@ body {
     font-size: 3.9rem;
     font-weight: 700;
     margin: 0;
+    margin-top: 6px;
   }
   .pricing__box-desc {
     font-weight: 200;
     font-size: 1.4rem;
-    margin-bottom: 8px;
   }
   .pricing__box-item {
     display: -webkit-box;
@@ -1880,32 +1881,31 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: -3px;
     margin-left: 5px;
   }
   .pricing__box-item p {
     margin-top: 8px;
     margin-left: 7px;
     font-weight: 300;
-    font-size: 1.55rem;
+    font-size: 1.6rem;
   }
   .pricing__box-item i {
     font-size: 24px;
   }
   .pricing__box-item .fa-xmark {
-    font-size: 25px;
+    font-size: 27px;
     margin-right: 2px;
   }
   .pricing__box a {
-    border-radius: 15px;
-    padding: 8px 25px;
-    font-size: 1.8rem;
-    font-weight: 500;
-    width: 165px;
-    margin-top: 19px;
+    padding: 8px 26px;
+    margin-top: 26px;
   }
   .footer {
     padding: 0px 85px 9px;
+  }
+  .contact__btn {
+    font-size: 2.2rem;
+    padding: 11px 50px;
   }
 }
 @media (min-width: 992px) {
@@ -2249,12 +2249,13 @@ body {
     margin-left: 9px;
     width: 380px;
     margin-bottom: 17px;
+    margin-left: 12px;
   }
   .container .col1 .portfolio__box-btn,
   .container .col2 .portfolio__box-btn {
-    font-size: 1.7rem;
-    width: 160px;
-    padding: 11px 13px;
+    font-size: 1.6rem;
+    width: 165px;
+    padding: 12px 14px;
     border-radius: 5px;
   }
   .container .col1 .portfolio__box-line,
@@ -2587,12 +2588,13 @@ body {
     margin-left: 9px;
     width: 420px;
     margin-bottom: 17px;
+    margin-left: 12px;
   }
   .container .col1 .portfolio__box-btn,
   .container .col2 .portfolio__box-btn {
-    font-size: 1.7rem;
-    width: 160px;
-    padding: 11px 13px;
+    font-size: 1.6rem;
+    width: 165px;
+    padding: 12px 13px;
     border-radius: 5px;
   }
   .container .col1 .portfolio__box-line,
@@ -2715,10 +2717,18 @@ body {
     text-wrap: nowrap;
   }
   .workflow_container .text_box-title {
-    font-size: 2.4rem;
+    font-size: 2.9rem;
   }
   .workflow_container .text_box-item {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    margin-left: 19px;
+  }
+  .workflow_container .text_box-item:before {
+    color: #181b61;
+    font-size: 2.4em;
+    margin-left: -25px;
+    top: -18px;
+    left: 1px;
   }
   .pricing .title__box {
     margin-bottom: 40px;
@@ -2737,63 +2747,54 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-column-gap: 80px;
-       -moz-column-gap: 80px;
-            column-gap: 80px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
   }
   .pricing__box {
     width: 360px;
-    height: 470px;
-    border: 1px #fff solid;
-    border-radius: 7px;
-    margin-bottom: 60px;
-    padding: 20px 30px 20px 30px;
+    height: 475px;
+    padding: 30px;
   }
   .pricing__box-title {
     font-size: 3.6rem;
     margin-bottom: 5px;
   }
   .pricing__box-price {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 4.1rem;
     margin: 0;
+    margin-top: 7px;
   }
   .pricing__box-desc {
-    font-weight: 200;
     font-size: 1.4rem;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     width: 268px;
   }
   .pricing__box-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: -1px;
-    margin-left: 4px;
+    margin-left: 5px;
+    margin-bottom: 7px;
   }
   .pricing__box-item p {
     margin-top: 8px;
     margin-left: 7px;
     font-weight: 300;
-    font-size: 1.55rem;
+    font-size: 1.6rem;
   }
   .pricing__box-item i {
-    font-size: 24px;
+    font-size: 27px;
+    margin-top: 8px;
   }
   .pricing__box-item .fa-xmark {
-    font-size: 25px;
+    font-size: 28px;
     margin-right: 2px;
   }
   .pricing__box a {
     border-radius: 15px;
-    padding: 9px 25px;
+    padding: 9px 27px;
     font-size: 1.9rem;
     font-weight: 500;
     width: 180px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
   .am .title__box-title {
     font-size: 48px;
@@ -2843,12 +2844,13 @@ body {
     color: #242424;
     margin-left: 9px;
     width: 460px;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
+    margin-left: 12px;
   }
   .container .col1 .portfolio__box-btn,
   .container .col2 .portfolio__box-btn {
     font-size: 1.7rem;
-    width: 173px;
+    width: 170px;
     padding: 12px 16px;
     border-radius: 5px;
   }
@@ -3028,7 +3030,7 @@ body {
   .workflow_container .text_box {
     position: absolute;
     color: black;
-    left: -90%;
+    left: -95%;
     top: 12%;
   }
   .workflow_container .text_box:nth-child(2) {
@@ -3037,16 +3039,52 @@ body {
   }
   .workflow_container .text_box:nth-child(3) {
     top: 65.2%;
-    left: -90%;
+    left: -95%;
   }
   .workflow_container .text_box:nth-child(4) {
     top: 92%;
     left: 113%;
   }
   .workflow_container .text_box-title {
-    font-size: 2.8rem;
+    font-size: 2.9rem;
   }
   .workflow_container .text_box-item {
     font-size: 1.8rem;
+    margin-top: 11px;
+  }
+  .pricing .container {
+    -webkit-column-gap: 115px;
+       -moz-column-gap: 115px;
+            column-gap: 115px;
+  }
+  .pricing__box {
+    width: 360px;
+    height: 490px;
+    padding: 30px;
+  }
+  .pricing__box-title {
+    font-size: 3.8rem;
+    margin-bottom: 7px;
+  }
+  .pricing__box-price {
+    font-size: 4.2rem;
+    margin-top: 7px;
+  }
+  .pricing__box-desc {
+    margin-bottom: 14px;
+  }
+  .pricing__box-item p {
+    margin-top: 8px;
+    margin-left: 7px;
+    font-weight: 300;
+    font-size: 1.6rem;
+  }
+  .pricing__box a {
+    border-radius: 15px;
+    padding: 10px 27px;
+    font-size: 1.9rem;
+    font-weight: 500;
+    width: 180px;
+    margin-top: 18px;
   }
 }/*# sourceMappingURL=main.css.map */
