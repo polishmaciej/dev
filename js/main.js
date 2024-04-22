@@ -69,9 +69,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         container.addEventListener('mouseenter', stopAnimation);
         container.addEventListener('mouseleave', startAnimation);
-        container.addEventListener('touchstart', stopAnimation);
-        container.addEventListener('touchend', startAnimation);
-        document.addEventListener('click', startAnimation);
+
+        container.addEventListener('touchstart', function(event) {
+            if (event.target.closest('.reviews__slide')) {
+                stopAnimation();
+            }
+        });
+
+        container.addEventListener('touchend', function(event) {
+            if (event.target.closest('.reviews__slide')) {
+                startAnimation();
+            }
+        });
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.reviews__slide')) {
+            startAnimation();
+        }
     });
 });
 
