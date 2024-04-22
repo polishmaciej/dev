@@ -55,23 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const slides = container.querySelectorAll('.reviews__slide');
 
-        container.addEventListener('mouseenter', function() {
-            slides.forEach(slide => {
-                slide.classList.add('animation_stop');
-            });
-        });
-
-        container.addEventListener('mouseleave', function() {
-            slides.forEach(slide => {
-                slide.classList.remove('animation_stop');
-            });
-        });
-
         container.addEventListener('click', function(event) {
             slides.forEach(slide => {
-                if (!container.contains(event.target)) {
-                    slide.classList.remove('animation_stop');
-                }
+                slide.classList.toggle('animation_stop');
             });
         });
     });
