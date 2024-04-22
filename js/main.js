@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-
         container.addEventListener('touchstart', () => {
             slides.forEach(slide => {
                 slide.classList.add('animation_stop');
@@ -75,6 +74,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         container.addEventListener('touchend', () => {
+            slides.forEach(slide => {
+                slide.classList.remove('animation_stop');
+            });
+        });
+    });
+
+    document.addEventListener('click', () => {
+        containers.forEach(container => {
+            const slides = container.querySelectorAll('.reviews__slide');
             slides.forEach(slide => {
                 slide.classList.remove('animation_stop');
             });
