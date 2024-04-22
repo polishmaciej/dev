@@ -66,6 +66,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 slide.classList.remove('animation_stop');
             });
         });
+
+
+        container.addEventListener('touchstart', () => {
+            slides.forEach(slide => {
+                slide.classList.add('animation_stop');
+            });
+        });
+
+        container.addEventListener('touchend', () => {
+            slides.forEach(slide => {
+                slide.classList.remove('animation_stop');
+            });
+        });
     });
 });
 

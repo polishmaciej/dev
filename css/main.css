@@ -680,6 +680,7 @@ body {
   width: 320px;
   margin-bottom: 17px;
   margin-top: 6px;
+  line-height: 24px;
 }
 .container .portfolio__box-btn {
   font-size: 1.5rem;
