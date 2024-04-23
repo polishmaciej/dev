@@ -173,7 +173,6 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 79px;
 }
 
 body {
@@ -1008,6 +1007,8 @@ body {
   background-color: #f0f0f0;
   color: black;
   padding-bottom: 80px;
+}
+.reviews .reviews_overflow {
   overflow: hidden;
 }
 .reviews .title__box {
@@ -1922,6 +1923,12 @@ body {
     background-attachment: fixed;
     background-position: right 35% bottom 45%;
     background-image: url("../img/header_big.jpg");
+  }
+  #aboutme,
+  #portfolio,
+  #reviews,
+  #prices {
+    scroll-margin-top: 79px;
   }
   .navbar {
     display: -webkit-box;
