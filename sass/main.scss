@@ -32,7 +32,6 @@ body {
 
 .navbar {
 	display: none;
-	
 }
 .nav {
 	position: fixed;
@@ -459,7 +458,6 @@ body {
 			color: black;
 			margin-left: 8px;
 			font-weight: 600;
-
 		}
 		&-text {
 			font-size: 1.5rem;
@@ -765,25 +763,30 @@ body {
 		white-space: nowrap;
 		display: inline-block;
 		padding-bottom: 30px;
+		&:hover .animation_right {
+			animation-play-state: paused;
+		}
+		&:active .animation_right {
+			animation-play-state: paused;
+		}
 	}
 	.r-container-2 {
 		overflow: hidden;
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: flex-end;
+		&:hover .animation_left {
+			animation-play-state: paused;
+		}
+		&:active .animation_right {
+			animation-play-state: paused;
+		}
 	}
 	.animation_right {
 		animation: 85s slide infinite linear;
-		&:hover {
-			animation-play-state: paused;
-		}
 	}
 	.animation_left {
 		animation: 85s slide_l infinite linear;
-
-		&:hover {
-			animation-play-state: paused;
-		}
 	}
 
 	.animation_stop {
@@ -916,7 +919,7 @@ body {
 	flex-direction: row;
 	background-color: #202020;
 	justify-content: space-between;
-	padding: 0px 20px 13px;
+	padding: 5px 20px 13px;
 	color: white;
 	align-items: center;
 	.logo {
@@ -948,7 +951,7 @@ body {
 		p {
 			font-family: "Katibeh", serif;
 			font-size: 2.3rem;
-			margin-bottom: 5px;
+			margin-bottom: 2px;
 		}
 		&-icons {
 			display: flex;

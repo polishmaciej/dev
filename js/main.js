@@ -41,31 +41,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", addShadow);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const containers = document.querySelectorAll('.r-container, .r-container-2');
 
-    containers.forEach(container => {
-        let animationClass;
-
-        if (container.classList.contains('r-container')) {
-            animationClass = 'animation_right';
-        } else if (container.classList.contains('r-container-2')) {
-            animationClass = 'animation_left';
-        }
-
-        const slides = container.querySelectorAll('.reviews__slide');
-
-        container.addEventListener('mouseenter', () => {
-            slides.forEach(slide => {
-                slide.classList.add('animation_stop');
-            });
-        });
-
-        container.addEventListener('mouseleave', () => {
-            slides.forEach(slide => {
-                slide.classList.remove('animation_stop');
-            });
-        });
-    });
-});
 
