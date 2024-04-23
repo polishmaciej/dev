@@ -3,13 +3,12 @@
 		background-attachment: fixed;
 		background-position: right 35% bottom 45%;
 		background-image: url("../img/header_big.jpg");
-		
 	}
 	#aboutme,
 	#portfolio,
 	#reviews,
 	#prices {
-		scroll-margin-top: 79px ;
+		scroll-margin-top: 79px;
 	}
 
 	.navbar {
@@ -22,7 +21,7 @@
 		padding: 0px 35px;
 		transition: background-color 0.6s;
 		z-index: 1000;
-		
+
 		img {
 			width: 75px;
 			height: 50px;
@@ -47,7 +46,7 @@
 			&-items {
 				margin: 0;
 				padding: 0;
-				
+
 				a {
 					text-decoration: none;
 					color: $pure-white;
@@ -128,7 +127,6 @@
 				}
 			}
 		}
-		
 	}
 
 	.am {
@@ -271,6 +269,41 @@
 			}
 		}
 	}
+	.s-contact {
+		.contact-container {
+			.contact-left {
+				gap: 30px;
+				width: 500px;
+				max-width: none;
+				&-text {
+					&-title {
+						font-size: 30px;
+					}
+					&-desc {
+						font-weight: 200;
+						font-size: 17px;
+						margin-bottom: -15px;
+						span {
+							font-weight: 500;
+							color: rgb(255, 255, 255);
+							letter-spacing: 2px;
+						}
+					}
+					hr {
+						width: 65px;
+						height: 5px;
+					}
+				}
+
+				button {
+					padding: 13px 40px;
+					font-size: 19px;
+
+					font-weight: 500;
+				}
+			}
+		}
+	}
 
 	.container {
 		display: flex;
@@ -388,7 +421,7 @@
 	.pricing .title__box,
 	.reviews .title__box,
 	.contact .title__box,
-	.am .title__box{
+	.am .title__box {
 		padding-top: 40px;
 	}
 	.portfolio .title__box .title__box-title,
@@ -397,7 +430,6 @@
 	.reviews .title__box-title,
 	.contact .title__box-title {
 		font-size: 48px;
-		
 	}
 }
 
@@ -757,7 +789,7 @@
 
 				&-item {
 					font-size: 1.7rem;
-					margin-left: 19px;	
+					margin-left: 19px;
 					&:before {
 						color: #181b61;
 						font-size: 2.4em;
@@ -834,6 +866,117 @@
 	}
 	.am .title__box-title {
 		font-size: 48px;
+	}
+	.s-contact {
+		height: 750px;
+		overflow: hidden;
+		position: relative;
+
+		.background-image {
+			position: absolute;
+			top: 0;
+			left: 52%;
+			width: 836px;
+			height: 100%;
+			display: inline-block;
+			z-index: 1;
+			object-fit: cover;
+		}
+		.background3 {
+			position: absolute;
+			height: 100%;
+			bottom: 0px;
+			width: 78%;
+			left: 0;
+			z-index: 3;
+			display: inline-block;
+		}
+		.background2 {
+			position: absolute;
+			display: inline-block;
+			bottom: 0;
+			left: 0;
+			height: 880px;
+			width: 76%;
+			z-index: 4;
+		}
+		.background1 {
+			position: absolute;
+			display: inline-block;
+			top: 0;
+			left: 0;
+			height: 790px;
+			width: 70%;
+			z-index: 5;
+		}
+		.shadow-img {
+			position: absolute;
+			top: 0;
+			left: 52%;
+			width: 836px;
+			height: 100%;
+			display: inline-block;
+			z-index: 2;
+			background-color: #0a041cde;
+		}
+		.contact-container {
+			padding-bottom: 50px;
+			justify-content: flex-start;
+			margin-top: 0px;
+			margin-left: 13%;
+			width: 450px;
+			max-width: none;
+			.contact-left {
+				gap: 30px;
+				width: 450px;
+				max-width: none;
+				.contact-inputs {
+					font-size: 17px;
+					color: black;
+					&:focus {
+						border: 3px solid $bright-blue;
+					}
+					&::placeholder {
+						color: rgb(141, 141, 141);
+						font-size: 16px;
+					}
+				}
+				.textarea {
+					height: 140px;
+					padding-top: 15px;
+					border-radius: 20px;
+					width: 100%;
+					max-width: 240%;
+					max-height: 208px;
+					align-self: flex-start;
+				}
+				&-text {
+					&-title {
+						font-size: 30px;
+					}
+					&-desc {
+						font-weight: 200;
+						font-size: 17px;
+						margin-bottom: -15px;
+						span {
+							font-weight: 500;
+							color: rgb(255, 255, 255);
+							letter-spacing: 2px;
+						}
+					}
+					hr {
+						width: 65px;
+						height: 5px;
+					}
+				}
+
+				button {
+					padding: 13px 40px;
+					font-size: 19px;
+					font-weight: 500;
+				}
+			}
+		}
 	}
 }
 

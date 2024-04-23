@@ -1187,6 +1187,7 @@ body {
   color: rgb(252, 252, 252);
   padding-top: 40px;
   padding-bottom: 30px;
+  z-index: 6;
 }
 .contact .title__box-parag {
   font-size: 1.6rem;
@@ -1211,6 +1212,12 @@ body {
 .s-contact {
   background-color: #0d0526;
 }
+.s-contact .background1,
+.s-contact .background2,
+.s-contact .background3,
+.s-contact .background-image {
+  display: none;
+}
 .s-contact .contact-container {
   padding-bottom: 50px;
   display: -webkit-box;
@@ -1222,7 +1229,6 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  overflow: hidden;
 }
 .s-contact .contact-container .contact-left {
   display: -webkit-box;
@@ -1238,6 +1244,7 @@ body {
   gap: 20px;
   width: 85%;
   max-width: 370px;
+  z-index: 6;
 }
 .s-contact .contact-container .contact-left-text {
   -ms-flex-item-align: start;
@@ -1255,7 +1262,7 @@ body {
   margin-bottom: -5px;
 }
 .s-contact .contact-container .contact-left-text-desc span {
-  font-weight: 500;
+  font-weight: 400;
   color: rgb(0, 0, 252);
   letter-spacing: 1px;
 }
@@ -1318,9 +1325,12 @@ body {
   background-color: #232cdd;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  cursor: pointer;
+  -webkit-transition: scale 0.4s;
+  transition: scale 0.4s;
 }
-.s-contact .contact-container .contact-right {
-  display: none;
+.s-contact .contact-container .contact-left button:hover {
+  scale: 1.08;
 }
 
 .footer {
@@ -1331,7 +1341,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #202020;
+  background-color: #111111;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2275,6 +2285,33 @@ body {
     text-align: left;
     width: 420px;
   }
+  .s-contact .contact-container .contact-left {
+    gap: 30px;
+    width: 500px;
+    max-width: none;
+  }
+  .s-contact .contact-container .contact-left-text-title {
+    font-size: 30px;
+  }
+  .s-contact .contact-container .contact-left-text-desc {
+    font-weight: 200;
+    font-size: 17px;
+    margin-bottom: -15px;
+  }
+  .s-contact .contact-container .contact-left-text-desc span {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+  }
+  .s-contact .contact-container .contact-left-text hr {
+    width: 65px;
+    height: 5px;
+  }
+  .s-contact .contact-container .contact-left button {
+    padding: 13px 40px;
+    font-size: 19px;
+    font-weight: 500;
+  }
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2880,6 +2917,133 @@ body {
   }
   .am .title__box-title {
     font-size: 48px;
+  }
+  .s-contact {
+    height: 750px;
+    overflow: hidden;
+    position: relative;
+  }
+  .s-contact .background-image {
+    position: absolute;
+    top: 0;
+    left: 52%;
+    width: 836px;
+    height: 100%;
+    display: inline-block;
+    z-index: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .s-contact .background3 {
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    width: 78%;
+    left: 0;
+    z-index: 3;
+    display: inline-block;
+  }
+  .s-contact .background2 {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    height: 880px;
+    width: 76%;
+    z-index: 4;
+  }
+  .s-contact .background1 {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 790px;
+    width: 70%;
+    z-index: 5;
+  }
+  .s-contact .shadow-img {
+    position: absolute;
+    top: 0;
+    left: 52%;
+    width: 836px;
+    height: 100%;
+    display: inline-block;
+    z-index: 2;
+    background-color: rgba(10, 4, 28, 0.8705882353);
+  }
+  .s-contact .contact-container {
+    padding-bottom: 50px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 0px;
+    margin-left: 13%;
+    width: 450px;
+    max-width: none;
+  }
+  .s-contact .contact-container .contact-left {
+    gap: 30px;
+    width: 450px;
+    max-width: none;
+  }
+  .s-contact .contact-container .contact-left .contact-inputs {
+    font-size: 17px;
+    color: black;
+  }
+  .s-contact .contact-container .contact-left .contact-inputs:focus {
+    border: 3px solid #232cdd;
+  }
+  .s-contact .contact-container .contact-left .contact-inputs::-webkit-input-placeholder {
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+  }
+  .s-contact .contact-container .contact-left .contact-inputs::-moz-placeholder {
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+  }
+  .s-contact .contact-container .contact-left .contact-inputs:-ms-input-placeholder {
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+  }
+  .s-contact .contact-container .contact-left .contact-inputs::-ms-input-placeholder {
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+  }
+  .s-contact .contact-container .contact-left .contact-inputs::placeholder {
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+  }
+  .s-contact .contact-container .contact-left .textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 240%;
+    max-height: 208px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .s-contact .contact-container .contact-left-text-title {
+    font-size: 30px;
+  }
+  .s-contact .contact-container .contact-left-text-desc {
+    font-weight: 200;
+    font-size: 17px;
+    margin-bottom: -15px;
+  }
+  .s-contact .contact-container .contact-left-text-desc span {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+  }
+  .s-contact .contact-container .contact-left-text hr {
+    width: 65px;
+    height: 5px;
+  }
+  .s-contact .contact-container .contact-left button {
+    padding: 13px 40px;
+    font-size: 19px;
+    font-weight: 500;
   }
 }
 @media (min-width: 1400px) {
