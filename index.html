@@ -46,7 +46,9 @@
 						</li>
 					</ul>
 				</div>
-				<a href="mailto:Maciekzaqwsx@interia.pl" class="navbar_btn">Hire me</a>
+				<a href="mailto:Maciekzaqwsx@interia.pl" class="navbar_btn"
+					>Hire me</a
+				>
 			</div>
 
 			<buttton class="burger-btn">
@@ -899,21 +901,52 @@
 					</div>
 				</div>
 			</section>
-			<section class="contact-bg" id="contact">
-				<div class="bg-shadow"></div>
+			<section class="s-contact" id="contact">
 				<div class="wrapper contact">
 					<div class="title__box">
 						<p class="title__box-parag">To Achieve Excellence</p>
 						<h2 class="title__box-title">Let's collaborate</h2>
 					</div>
-					<p class="contact__text">
-						Have a project idea? Let's chat! Whether it's about new
-						projects, collaborations, or anything else, feel free to reach
-						out. I'm here to collaborate and bring your ideas to life!
-					</p>
-					<a href="mailto:Maciekzaqwsx@interia.pl" class="contact__btn"
-						>Contact Me</a
-					>
+				</div>
+				<div class="contact-container">
+					<form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+						<div class="contact-left-text">
+							<h2 class="contact-left-text-title">Get in touch</h2>
+							<hr />
+							<p class="contact-left-text-desc">Or reach me via: <span>Matthewdev.gmail.com</span></p>
+						</div>
+						<input type="hidden" name="access_key" value="9e5a5d23-445e-4376-b454-0e595ec65153">
+						<input
+							type="text"
+							name="name"
+							placeholder="Your Name"
+							class="contact-inputs"
+							required
+						/>
+						<input
+							type="text"
+							name="email"
+							placeholder="Your Email"
+							class="contact-inputs"
+							required
+						/>
+						<textarea
+							name="message"
+							placeholder="Your message"
+							class="contact-inputs textarea"
+							required
+						></textarea>
+						<button type="sumbit">Sumbit</button>
+					</form>
+					<div class="contact-right">
+						<img src="/img/photo_contact.png" class="background1" />
+						<img src="/img/photo_contact.png" class="background2" />
+						<img src="/img/photo_contact.png" class="background3" />
+						<img
+							src="/img/contact_big.jpg"
+							alt="background photo that show laptop"
+						/>
+					</div>
 				</div>
 			</section>
 		</main>

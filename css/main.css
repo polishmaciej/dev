@@ -1152,21 +1152,6 @@ body {
   margin-right: 23px;
 }
 
-.contact-bg {
-  background-image: url(../img/contact_mini.jpg);
-  background-size: cover;
-  background-position: right 20% bottom 50%;
-  z-index: 5;
-  position: relative;
-}
-.contact-bg .bg-shadow {
-  background-color: rgba(14, 9, 29, 0.862745098);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 3;
-}
-
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1224,25 +1209,115 @@ body {
   height: 1px;
   left: 20%;
 }
-.contact__text {
-  z-index: 100;
-  font-size: 1.6rem;
-  margin-bottom: 30px;
-  line-height: 27px;
+
+.s-contact {
+  background-color: #0d0526;
 }
-.contact__btn {
-  text-decoration: none;
+.s-contact .contact-container {
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+}
+.s-contact .contact-container .contact-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  width: 85%;
+  max-width: 370px;
+}
+.s-contact .contact-container .contact-left-text {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.s-contact .contact-container .contact-left-text-title {
+  font-weight: 500;
+  color: white;
+  font-size: 26px;
+}
+.s-contact .contact-container .contact-left-text-desc {
+  color: white;
+  font-weight: 200;
+  font-size: 15px;
+  margin-bottom: -10px;
+}
+.s-contact .contact-container .contact-left-text-desc span {
+  font-weight: 500;
+  color: rgb(48, 48, 224);
+  letter-spacing: 1px;
+}
+.s-contact .contact-container .contact-left-text hr {
+  border: none;
+  width: 50px;
+  height: 4px;
   background-color: #232cdd;
-  font-size: 2rem;
-  padding: 8px 36px;
-  color: #fff;
-  border-radius: 15px;
-  z-index: 100;
-  -webkit-transition: scale 0.4s;
-  transition: scale 0.4s;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
-.contact__btn:hover {
-  scale: 1.07;
+.s-contact .contact-container .contact-left .contact-inputs {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: grey;
+  border-radius: 50px;
+}
+.s-contact .contact-container .contact-left .contact-inputs:focus {
+  border: 3px solid #232cdd;
+}
+.s-contact .contact-container .contact-left .contact-inputs::-webkit-input-placeholder {
+  color: rgb(168, 168, 168);
+}
+.s-contact .contact-container .contact-left .contact-inputs::-moz-placeholder {
+  color: rgb(168, 168, 168);
+}
+.s-contact .contact-container .contact-left .contact-inputs:-ms-input-placeholder {
+  color: rgb(168, 168, 168);
+}
+.s-contact .contact-container .contact-left .contact-inputs::-ms-input-placeholder {
+  color: rgb(168, 168, 168);
+}
+.s-contact .contact-container .contact-left .contact-inputs::placeholder {
+  color: rgb(168, 168, 168);
+}
+.s-contact .contact-container .contact-left .textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+.s-contact .contact-container .contact-left button {
+  padding: 12px 35px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 50px;
+  background-color: #232cdd;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.s-contact .contact-container .contact-right {
+  display: none;
 }
 
 .footer {
@@ -1445,15 +1520,6 @@ body {
     background-color: rgb(92, 92, 92);
     margin: 0 auto;
     margin-top: 45px;
-  }
-  .contact__text {
-    width: 560px;
-    font-size: 1.8rem;
-  }
-  .contact__btn {
-    font-size: 2.1rem;
-    padding: 8px 45px;
-    border-radius: 17px;
   }
   .workflow {
     width: 100%;
@@ -1912,10 +1978,6 @@ body {
   }
   .footer {
     padding: 0px 85px 9px;
-  }
-  .contact__btn {
-    font-size: 2.2rem;
-    padding: 11px 50px;
   }
 }
 @media (min-width: 992px) {

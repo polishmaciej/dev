@@ -843,20 +843,7 @@ body {
 		}
 	}
 }
-.contact-bg {
-	background-image: url(../img/contact_mini.jpg);
-	background-size: cover;
-	background-position: right 20% bottom 50%;
-	z-index: 5;
-	position: relative;
-	.bg-shadow {
-		background-color: #0e091ddc;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		z-index: 3;
-	}
-}
+
 .contact {
 	display: flex;
 	flex-direction: column;
@@ -895,23 +882,91 @@ body {
 			}
 		}
 	}
-	&__text {
-		z-index: 100;
-		font-size: 1.6rem;
-		margin-bottom: 30px;
-		line-height: 27px;
-	}
-	&__btn {
-		text-decoration: none;
-		background-color: $bright-blue;
-		font-size: 2rem;
-		padding: 8px 36px;
-		color: $pure-white;
-		border-radius: 15px;
-		z-index: 100;
-		transition: scale 0.4s;
-		&:hover {
-			scale: 1.07;
+}
+.s-contact {
+	background-color: $darker-blue;
+	.contact-container {
+		padding-bottom: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		overflow: hidden;
+		.contact-left {
+			display: flex;
+			flex-direction: column;
+			align-items: center;			
+			gap: 20px;
+			width: 85%;
+			max-width: 370px;
+			&-text {
+				align-self: flex-start;
+				&-title {
+					font-weight: 500;
+					color: white;
+					font-size: 26px;
+					
+				}
+				&-desc {
+					color: white;
+					font-weight: 200;
+					font-size: 15px;
+					margin-bottom: -10px;
+		
+					span {
+						font-weight: 500;
+						color: rgb(48, 48, 224);
+						letter-spacing: 1px;
+					}
+				}
+				hr {
+					border: none;
+					width: 50px;
+					height: 4px;
+					background-color: $bright-blue;
+					border-radius: 10px;
+					margin-bottom: 10px;
+					
+				}
+			}
+			
+			.contact-inputs {
+				width: 100%;
+				height: 50px;
+				border: none;
+				outline: none;
+				padding-left: 25px;
+				font-weight: 500;
+				color: grey;
+				border-radius: 50px;
+				&:focus {
+					border: 3px solid $bright-blue;
+				}
+				&::placeholder {
+					color: rgb(168, 168, 168);
+				}
+			}
+
+			.textarea {
+				height: 140px;
+				padding-top: 15px;
+				border-radius: 20px;
+				width: 100%;
+				max-width: 100%;
+			}
+			button {
+				padding: 12px 35px;
+				font-size: 18px;
+				letter-spacing: 1px;
+				color: white;
+				border: none;
+				font-weight: 500;
+				border-radius: 50px;
+				background-color: $bright-blue;
+				align-self: flex-start
+			}
+		}
+		.contact-right {		
+			display: none;
 		}
 	}
 }
