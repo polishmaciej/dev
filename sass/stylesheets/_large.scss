@@ -431,6 +431,9 @@
 	.contact .title__box-title {
 		font-size: 48px;
 	}
+	.reviews .title__box {
+		padding-bottom: 80px;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -785,6 +788,7 @@
 				}
 				&-title {
 					font-size: 2.9rem;
+					font-weight: 500;
 				}
 
 				&-item {
@@ -868,7 +872,7 @@
 		font-size: 48px;
 	}
 	.s-contact {
-		height: 750px;
+		height: 700px;
 		overflow: hidden;
 		position: relative;
 
@@ -922,7 +926,7 @@
 		.contact-container {
 			padding-bottom: 50px;
 			justify-content: flex-start;
-			margin-top: 0px;
+			margin-top: 70px;
 			margin-left: 13%;
 			width: 450px;
 			max-width: none;
@@ -946,13 +950,13 @@
 					padding-top: 15px;
 					border-radius: 20px;
 					width: 100%;
-					max-width: 240%;
+					max-width: 150%;
 					max-height: 208px;
 					align-self: flex-start;
 				}
 				&-text {
 					&-title {
-						font-size: 30px;
+						font-size: 48px;
 					}
 					&-desc {
 						font-weight: 200;
@@ -965,7 +969,7 @@
 						}
 					}
 					hr {
-						width: 65px;
+						width: 90px;
 						height: 5px;
 					}
 				}
@@ -1135,7 +1139,7 @@
 						font-size: 27px;
 						line-height: 27px;
 						width: 500px;
-						margin-top: 48px;
+						margin-top: 50px;
 
 						.bold-text {
 							font-weight: 600;
@@ -1148,8 +1152,7 @@
 				}
 				&-desc {
 					position: absolute;
-					bottom: 10px;
-
+					bottom: 20px;
 					font-size: 17px;
 					font-weight: 300;
 					text-align: left;
@@ -1207,7 +1210,7 @@
 					left: 113%;
 				}
 				&-title {
-					font-size: 2.9rem;
+					font-size: 3.2rem;
 				}
 
 				&-item {
