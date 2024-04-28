@@ -252,7 +252,7 @@ body {
 				font-size: 17px;
 				box-shadow: 0px 0px 20px $bright-blue;
 				margin-top: 13px;
-				transition: scale .5s;
+				transition: scale 0.5s;
 				&:hover {
 					scale: 1.05;
 				}
@@ -359,6 +359,7 @@ body {
 				font-weight: 200;
 				font-size: 16px;
 				text-align: center;
+				width: 330px;
 				.bold {
 					font-weight: 500;
 				}
@@ -369,6 +370,7 @@ body {
 			display: flex;
 			flex-direction: column;
 			margin-bottom: 30px;
+			padding: 0 12px;
 			.one {
 				margin-bottom: 7px;
 			}
@@ -809,10 +811,11 @@ body {
 		}
 	}
 	.animation_right {
-		animation: 85s slide infinite linear;
+		animation: slide 15s infinite linear;
 	}
+
 	.animation_left {
-		animation: 85s slide_l infinite linear;
+		animation: slide_l 15s infinite linear;
 	}
 
 	.animation_stop {
@@ -991,15 +994,17 @@ body {
 	.icon_bg {
 		width: 40px;
 		height: 40px;
-		background-color: #dfdede;
+		background-color: transparent;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border-radius: 50px;
 		margin: 0 4px;
+		text-decoration: none;
 	}
-	.icon {
-		width: 25px;
+	i {
+		font-size: 25px;
+		color: white;
 	}
 	&__logo {
 		justify-content: flex-start;

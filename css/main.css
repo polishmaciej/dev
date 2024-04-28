@@ -574,6 +574,7 @@ body {
   font-weight: 200;
   font-size: 16px;
   text-align: center;
+  width: 330px;
 }
 .am .aboutMe-desc-desc .bold {
   font-weight: 500;
@@ -587,6 +588,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 30px;
+  padding: 0 12px;
 }
 .am .aboutMe-content .one {
   margin-bottom: 7px;
@@ -1139,12 +1141,12 @@ body {
           animation-play-state: paused;
 }
 .reviews .animation_right {
-  -webkit-animation: 85s slide infinite linear;
-          animation: 85s slide infinite linear;
+  -webkit-animation: slide 15s infinite linear;
+          animation: slide 15s infinite linear;
 }
 .reviews .animation_left {
-  -webkit-animation: 85s slide_l infinite linear;
-          animation: 85s slide_l infinite linear;
+  -webkit-animation: slide_l 15s infinite linear;
+          animation: slide_l 15s infinite linear;
 }
 .reviews .animation_stop {
   -webkit-animation-play-state: paused;
@@ -1382,7 +1384,7 @@ body {
 .footer .icon_bg {
   width: 40px;
   height: 40px;
-  background-color: #dfdede;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1394,9 +1396,11 @@ body {
           align-items: center;
   border-radius: 50px;
   margin: 0 4px;
+  text-decoration: none;
 }
-.footer .icon {
-  width: 25px;
+.footer i {
+  font-size: 25px;
+  color: white;
 }
 .footer__logo {
   -webkit-box-pack: start;
@@ -1434,6 +1438,9 @@ body {
 @media (min-width: 400px) {
   .header-box {
     margin-left: 10%;
+  }
+  .am .aboutMe-desc-desc {
+    width: auto;
   }
 }
 @media (min-width: 448px) {
@@ -2600,7 +2607,7 @@ body {
     margin-bottom: 25px;
   }
   .am .aboutMe-content .one .bold-text {
-    font-weight: 500;
+    font-weight: 600;
   }
   .am .aboutMe-content-title {
     width: 350px;
@@ -3288,7 +3295,7 @@ body {
     font-weight: 300;
   }
   .am .aboutMe-content-box-text .bold-text {
-    font-weight: 700;
+    font-weight: 600;
   }
   .am .aboutMe-content .one {
     margin-bottom: 15px;
