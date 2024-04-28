@@ -1,44 +1,46 @@
+@media (min-width: 567px) {
+	.header-box {
+		margin-left: 12%;
+	}
+}
 @media (min-width: 768px) {
 	.header {
-		
-		&__heading {
-			font-weight: normal;
-			font-size: 3.2rem;
-			width: 400px;
-
-			&-bold {
-				font-weight: 600;
-				font-size: 3.4rem;
-			}
-		}
-		&-text {
-			font-size: 2rem;
-			font-weight: 100;
-			margin-top: 9px;
-			margin-bottom: 10px;
-		}
-		&__lang {
-			display: flex;
-			flex-direction: row;
-			margin-bottom: 20px;
-			&-text {
-				padding-right: 5px;
-				padding-top: 4px;
-			}
-		}
-		&__btn {
-			text-decoration: none;
-			color: $pure-white;
-			border: 1px solid $pure-white;
-			border-radius: 5px;
-			padding: 8px 29px;
-			font-size: 1.9rem;
-		}
+		color: #F7F5FF;
 		.arrow-btn {
 			padding: 25px;
 			i {
 				font-size: 37px;
 			}
+		}
+		.header-box {
+			margin-left: 9%;
+		}
+		.header__text-bigScreen,
+		.header__name-bigScreen,
+		.header__h1-bigScreen,
+		.header-box .text-container .header-text-bigScreen{
+			display: inline-block;
+		}
+		.header__heading-sm{
+			display: none;
+		}
+		.header__text-bigScreen {
+			font-weight: 200;
+			font-size: 15px;
+		}
+		.header__name-bigScreen {
+			font-size: 40px;
+			font-weight: 500;
+		}
+		.header__h1-bigScreen{
+			font-size: 36px;
+		}
+		.text-container .header-text {
+			max-width: none;
+			width: 700px;
+		}
+		.text-container {
+			margin-left: 0;
 		}
 	}
 
@@ -307,6 +309,6 @@
 		}
 	}
 	.footer {
-		padding: 0px 85px 9px ;
+		padding: 14px 85px 14px ;
 	}
 }

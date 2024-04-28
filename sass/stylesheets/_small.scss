@@ -1,29 +1,40 @@
+
+@media (min-width: 400px) {
+	.header-box {
+		margin-left: 10%;
+	}
+
+}
 @media (min-width: 448px) {
+	.header-box {
+		margin-left: 5%;
+	}
 	.header {
 		.text-container {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			padding-left: 0px;
-		}
-
-		&__heading {
-			font-weight: normal;
-			font-size: 2.7rem;
-			width: 350px;
-			margin-bottom: 0;
-		}
-		&-text {
-			width: 380px;
-		}
-		&__lang {
-			margin-bottom: 10px;
+			margin-left: 0px;
+			.header-text {
+				width: auto;
+				min-width: 420px;
+				max-width: 545px;
+				margin: 3px 0px;
+				font-size: 17px;
+			}
+			.header__heading-sm {
+				font-size: 33px;
+				width: 440px;
+				line-height: 32px;
+				&-bold{
+					font-size: 33px;
+				}
+			}
+			
 		}
 	}
 }
 @media (min-width: 470px) {
+	.header-box {
+		margin-left: 6%;
+	}
 	.am {
 		padding-bottom: 45px;
 		.title__box {
@@ -76,7 +87,9 @@
 
 }
 @media (min-width: 567px) {
-	
+	.header-box {
+		margin-left: 8%;
+	}
 	.container {
 		.title__box-title {
 			font-size: 35px;
@@ -147,7 +160,7 @@
 				&::before {
 					position: absolute;
 					content: "";
-					bottom: -20%;
+					bottom: -18%;
 					width: 60%;
 					background-color: black;
 					height: 1px;
