@@ -36,7 +36,7 @@
 	#aboutme,
 	#portfolio,
 	#reviews,
-	#prices {
+	#services {
 		scroll-margin-top: 79px;
 	}
 
@@ -334,56 +334,6 @@
 		}
 	}
 
-	.container {
-		display: flex;
-		flex-direction: row;
-		margin: 0 auto;
-		justify-content: center;
-		column-gap: 80px;
-		.col2 {
-			padding-top: 130px;
-		}
-		.col1,
-		.col2 {
-			display: flex;
-			flex-direction: column;
-			width: 370px;
-			row-gap: 60px;
-			.portfolio__box {
-				margin-top: 45px;
-				width: 400px;
-				padding-top: 0px;
-				&-img {
-					width: 400px;
-				}
-				&-title {
-					font-size: 3rem;
-					margin-left: 8px;
-					font-weight: 600;
-					margin-top: 5px;
-				}
-				&-text {
-					font-size: 1.6rem;
-					color: #242424;
-					margin-left: 9px;
-					width: 380px;
-					margin-bottom: 17px;
-					margin-left: 12px;
-					line-height: 26px;
-				}
-				&-btn {
-					font-size: 1.6rem;
-					width: 165px;
-					padding: 12px 14px;
-					border-radius: 5px;
-				}
-				&-line {
-					display: none;
-				}
-			}
-		}
-	}
-
 	.reviews {
 		.title__box {
 			&-parag {
@@ -436,7 +386,7 @@
 	.workflow .title__box-title {
 		font-size: 42px;
 	}
-	.pricing .title__box-title {
+	.services .title__box-title {
 		font-size: 42px;
 	}
 	.contact .title__box-title {
@@ -447,7 +397,7 @@
 	}
 	.portfolio .title__box,
 	.workflow .title__box,
-	.pricing .title__box,
+	.services .title__box,
 	.reviews .title__box,
 	.contact .title__box,
 	.am .title__box {
@@ -455,7 +405,7 @@
 	}
 	.portfolio .title__box .title__box-title,
 	.workflow .title__box-title,
-	.pricing .title__box-title,
+	.services .title__box-title,
 	.reviews .title__box-title,
 	.contact .title__box-title {
 		font-size: 52px;
@@ -465,6 +415,32 @@
 	}
 }
 
+@media (min-width: 1111px) {
+	.services {
+		padding-bottom: 140px;
+
+		.title__box {
+			margin-bottom: 30px;
+		}
+		.container {
+			flex-direction: row;
+			justify-content: center;
+			row-gap: 0;
+			margin-top: 0;
+			.serviceBox {
+				margin: 0 20px;
+			}
+			.serviceBox__bgc2 {
+				top: -13px;
+				left: 187px;
+			}
+			.serviceBox__bgc3 {
+				top: -13px;
+				left: 882px;
+			}
+		}
+	}
+}
 @media (min-width: 1200px) {
 	.navbar {
 		padding: 0px 80px;
@@ -643,56 +619,56 @@
 				}
 			}
 		}
-	}
-
-	.container {
-		display: flex;
-		flex-direction: row;
-		margin: 0 auto;
-		justify-content: center;
-		column-gap: 100px;
-		.col2 {
-			padding-top: 130px;
-		}
-		.col1,
-		.col2 {
+		.container {
 			display: flex;
-			flex-direction: column;
-			width: 430px;
-			row-gap: 50px;
-			.portfolio__box {
-				margin-top: 45px;
+			flex-direction: row;
+			margin: 0 auto;
+			justify-content: center;
+			column-gap: 100px;
+			.col2 {
+				padding-top: 130px;
+			}
+			.col1,
+			.col2 {
+				display: flex;
+				flex-direction: column;
 				width: 430px;
-				padding-top: 0px;
-				&-img {
+				row-gap: 50px;
+				.portfolio__box {
+					margin-top: 45px;
 					width: 430px;
-				}
-				&-title {
-					font-size: 3.1rem;
-					margin-left: 8px;
-					font-weight: 600;
-					margin-top: 5px;
-				}
-				&-text {
-					font-size: 1.6rem;
-					color: #242424;
-					margin-left: 9px;
-					width: 420px;
-					margin-bottom: 17px;
-					margin-left: 12px;
-				}
-				&-btn {
-					font-size: 1.6rem;
-					width: 165px;
-					padding: 12px 13px;
-					border-radius: 5px;
-				}
-				&-line {
-					display: none;
+					padding-top: 0px;
+					&-img {
+						width: 430px;
+					}
+					&-title {
+						font-size: 3.1rem;
+						margin-left: 8px;
+						font-weight: 600;
+						margin-top: 5px;
+					}
+					&-text {
+						font-size: 1.6rem;
+						color: #242424;
+						margin-left: 9px;
+						width: 420px;
+						margin-bottom: 17px;
+						margin-left: 12px;
+					}
+					&-btn {
+						font-size: 1.6rem;
+						width: 165px;
+						padding: 12px 13px;
+						border-radius: 5px;
+					}
+					&-line {
+						display: none;
+					}
 				}
 			}
 		}
 	}
+
 	.workflow {
 		padding: 0 5px 160px 13px;
 		.title__box {
@@ -820,69 +796,7 @@
 			}
 		}
 	}
-	.pricing {
-		.title__box {
-			margin-bottom: 40px;
-			&-parag {
-				font-size: 1.7rem;
-				font-weight: 300;
-			}
-			&-title {
-				font-size: 4.8rem;
-				font-weight: 500;
-				position: relative;
-			}
-		}
-		.container {
-			flex-direction: row;
-			column-gap: 50px;
-		}
-		&__box {
-			width: 360px;
-			height: 475px;
-			padding: 30px;
-			&-title {
-				font-size: 3.6rem;
-				margin-bottom: 5px;
-			}
-			&-price {
-				font-size: 4.1rem;
-				margin: 0;
-				margin-top: 7px;
-			}
-			&-desc {
-				font-size: 1.4rem;
-				margin-bottom: 14px;
-				width: 268px;
-			}
-			&-item {
-				margin-left: 5px;
-				margin-bottom: 7px;
-				p {
-					margin-top: 8px;
-					margin-left: 7px;
-					font-weight: 300;
-					font-size: 1.6rem;
-				}
-				i {
-					font-size: 27px;
-					margin-top: 8px;
-				}
-				.fa-xmark {
-					font-size: 28px;
-					margin-right: 2px;
-				}
-			}
-			a {
-				border-radius: 15px;
-				padding: 9px 27px;
-				font-size: 1.9rem;
-				font-weight: 500;
-				width: 180px;
-				margin-top: 16px;
-			}
-		}
-	}
+
 	.am .title__box-title {
 		font-size: 48px;
 	}
@@ -1006,11 +920,11 @@
 		}
 		.header__h1-bigScreen .bold {
 			font-size: 52px;
-		 }
-		  .header__text-bigScreen {
+		}
+		.header__text-bigScreen {
 			margin-bottom: -4px;
-		  }
-		 .header-box {
+		}
+		.header-box {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
@@ -1027,11 +941,11 @@
 				animation: img_move 10s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 				margin-bottom: 50px;
 			}
-			 .text-container .header-text {
+			.text-container .header-text {
 				font-size: 20px;
 				width: 845px;
 				line-height: 23px;
-			 }
+			}
 			.text-container {
 				margin-left: 0;
 			}
@@ -1052,53 +966,55 @@
 			}
 		}
 	}
-
-	.container {
-		column-gap: 150px;
-		margin-top: 20px;
-		.col2 {
-			padding-top: 130px;
-		}
-		.col1,
-		.col2 {
-			display: flex;
-			flex-direction: column;
-			width: 475px;
-			row-gap: 75px;
-			.portfolio__box {
-				margin-top: 45px;
+	.portfolio {
+		.container {
+			column-gap: 150px;
+			margin-top: 20px;
+			.col2 {
+				padding-top: 130px;
+			}
+			.col1,
+			.col2 {
+				display: flex;
+				flex-direction: column;
 				width: 475px;
-				padding-top: 0px;
-				&-img {
+				row-gap: 75px;
+				.portfolio__box {
+					margin-top: 45px;
 					width: 475px;
-				}
-				&-title {
-					font-size: 3.1rem;
-					margin-left: 8px;
-					font-weight: 600;
-					margin-top: 5px;
-				}
-				&-text {
-					font-size: 1.7rem;
-					color: #242424;
-					margin-left: 9px;
-					width: 460px;
-					margin-bottom: 20px;
-					margin-left: 12px;
-					line-height: 27px;
-				}
-				&-btn {
-					font-size: 1.7rem;
-					width: 170px;
-					padding: 12px 16px;
-					border-radius: 5px;
-				}
-				&-line {
-					display: none;
+					padding-top: 0px;
+					&-img {
+						width: 475px;
+					}
+					&-title {
+						font-size: 3.1rem;
+						margin-left: 8px;
+						font-weight: 600;
+						margin-top: 5px;
+					}
+					&-text {
+						font-size: 1.7rem;
+						color: #242424;
+						margin-left: 9px;
+						width: 460px;
+						margin-bottom: 20px;
+						margin-left: 12px;
+						line-height: 27px;
+					}
+					&-btn {
+						font-size: 1.7rem;
+						width: 170px;
+						padding: 12px 16px;
+						border-radius: 5px;
+					}
+					&-line {
+						display: none;
+					}
 				}
 			}
 		}
 	}
+
 	.am {
 		padding-bottom: 70px;
 		.title__box {
@@ -1233,6 +1149,10 @@
 	.footer {
 		padding: 13px 200px 13px;
 	}
+	.services .container .serviceBox {
+		margin: 0 55px;
+	}
+	
 	.workflow {
 		padding: 0 5px 160px 13px;
 		.title__box {
@@ -1286,44 +1206,6 @@
 					font-size: 1.8rem;
 					margin-top: 11px;
 				}
-			}
-		}
-	}
-	.pricing {
-		.container {
-			column-gap: 115px;
-		}
-		&__box {
-			width: 360px;
-			height: 490px;
-			padding: 30px;
-			&-title {
-				font-size: 3.8rem;
-				margin-bottom: 7px;
-			}
-			&-price {
-				font-size: 4.2rem;
-				margin-top: 7px;
-			}
-			&-desc {
-				margin-bottom: 11px;
-				margin-top: 3px;
-			}
-			&-item {
-				p {
-					margin-top: 8px;
-					margin-left: 7px;
-					font-weight: 300;
-					font-size: 1.6rem;
-				}
-			}
-			a {
-				border-radius: 15px;
-				padding: 10px 27px;
-				font-size: 1.9rem;
-				font-weight: 500;
-				width: 180px;
-				margin-top: 18px;
 			}
 		}
 	}
