@@ -1134,12 +1134,12 @@ body {
           animation-play-state: paused;
 }
 .reviews .animation_right {
-  -webkit-animation: slide 15s infinite linear;
-          animation: slide 15s infinite linear;
+  -webkit-animation: slide 85s infinite linear;
+          animation: slide 85s infinite linear;
 }
 .reviews .animation_left {
-  -webkit-animation: slide_l 15s infinite linear;
-          animation: slide_l 15s infinite linear;
+  -webkit-animation: slide_l 85s infinite linear;
+          animation: slide_l 85s infinite linear;
 }
 .reviews .animation_stop {
   -webkit-animation-play-state: paused;
@@ -1776,23 +1776,11 @@ body {
   .am .aboutMe .line {
     width: 170px;
   }
-  .am .aboutMe-action-text {
-    font-size: 24px;
+  .am .aboutMe .line_special {
+    display: none;
   }
-  .am .aboutMe-action-btns {
-    -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
-            column-gap: 50px;
-  }
-  .am .aboutMe-action-btns .btn1 {
-    padding: 6px 45px;
-    font-size: 21px;
-    border-radius: 17px;
-  }
-  .am .aboutMe-action-btns .btn2 {
-    padding: 5px 38.5px;
-    font-size: 22px;
-    border-radius: 17px;
+  .am .aboutMe-action {
+    display: none;
   }
   .am .aboutMe-content {
     width: 550px;
@@ -1981,7 +1969,7 @@ body {
   .services .container .serviceBox__title-text {
     font-size: 25px;
   }
-  .services .container .serviceBox__title {
+  .services .container .serviceBox {
     margin-bottom: 22px;
   }
   .footer {
@@ -2187,30 +2175,6 @@ body {
     margin-top: 10px;
     display: none;
   }
-  .am .aboutMe-action {
-    display: none;
-    margin-top: 0;
-  }
-  .am .aboutMe-action-text {
-    font-size: 26px;
-    width: 520px;
-    margin-bottom: 25px;
-  }
-  .am .aboutMe-action-btns {
-    -webkit-column-gap: 60px;
-       -moz-column-gap: 60px;
-            column-gap: 60px;
-  }
-  .am .aboutMe-action-btns .btn1 {
-    padding: 7px 52px;
-    font-size: 22px;
-    border-radius: 20px;
-  }
-  .am .aboutMe-action-btns .btn2 {
-    padding: 7px 49px;
-    font-size: 22px;
-    border-radius: 20px;
-  }
   .am .aboutMe-content {
     width: 900px;
     -webkit-box-orient: horizontal;
@@ -2411,10 +2375,10 @@ body {
 }
 @media (min-width: 1111px) {
   .services {
-    padding-bottom: 140px;
+    padding-bottom: 180px;
   }
   .services .title__box {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .services .container {
     -webkit-box-orient: horizontal;
