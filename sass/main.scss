@@ -24,6 +24,7 @@ body {
 .title__box-title::before {
 	bottom: -17% !important;
 }
+
 //////////////
 /// NAV
 ////////////
@@ -63,9 +64,10 @@ body {
 			color: $pure-white;
 			text-decoration: none;
 			margin: 0.8em 0;
-			padding: 0.5em 0.6em;
+			padding: 0.6em 0.6em;
 			font-size: 3rem;
 			font-weight: 300;
+			letter-spacing: 1px;
 		}
 		&::before {
 			position: absolute;
@@ -95,7 +97,7 @@ body {
 		color: $pure-white;
 		letter-spacing: 2px;
 		background-color: $bright-blue;
-		margin: 0.8em 0;
+		margin: 0 auto;
 		display: block;
 		padding: 9px 0px;
 		width: 172px;
@@ -164,7 +166,11 @@ body {
 		}
 	}
 }
-
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before{
+	background-color: rgb(29, 29, 29);
+}
 //////////////
 /// HEADER
 ////////////
@@ -289,7 +295,7 @@ body {
 	);
 
 	padding: 0px 25px;
-	padding-bottom: 35px;
+	padding-bottom: 40px;
 	.title__box {
 		display: flex;
 		flex-direction: column;
@@ -340,7 +346,7 @@ body {
 				align-items: center;
 				&-desc {
 					font-size: 18px;
-					line-height: 25px;
+					line-height: 23px;
 					margin-left: 25px;
 					.bold-text {
 						font-weight: 600;
@@ -357,9 +363,9 @@ body {
 				margin-top: 30px;
 				margin-bottom: 30px;
 				font-weight: 200;
-				font-size: 16px;
+				font-size: 17px;
 				text-align: center;
-				width: 330px;
+				width: 320px;
 				.bold {
 					font-weight: 500;
 				}
@@ -453,7 +459,7 @@ body {
 			margin: 0;
 		}
 		&-title {
-			font-size: 3.1rem;
+			font-size: 3.4rem;
 			font-weight: 500;
 			position: relative;
 			&::before {
@@ -676,7 +682,7 @@ body {
 			position: relative;
 			display: flex;
 			flex-direction: column;
-			background-color: white;
+			background-color: rgb(236, 236, 236);
 			width: 320px;
 			height: 215px;
 			border-radius: 15px;

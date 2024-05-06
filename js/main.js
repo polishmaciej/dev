@@ -1,6 +1,10 @@
 const nav = document.querySelector(".nav");
 const navBtn = document.querySelector(".burger-btn");
 const allNavItems = document.querySelectorAll(".nav__item");
+const navBtnBars = document.querySelector(".burger-btn__bars")
+
+
+
 
 const handleNav = () => {
 	nav.classList.toggle("nav--active");
@@ -42,4 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+const handleObserver = () => {
+    const currentSection = window.scrollY;
+    const allSections = document.querySelectorAll('.section'); // Tutaj ustaw odpowiedni selektor dla sekcji na twojej stronie
 
+    allSections.forEach(section => {
+        if (section.classList.contains('white-section') && section.offsetTop <= currentSection + 60) {
+            navBtnBars.classList.add('black-bars-color');
+        } else if (!section.classList.contains('white-section') && section.offsetTop <= currentSection + 60) {
+            navBtnBars.classList.remove('black-bars-color');
+        }
+    });
+};
+
+window.addEventListener('scroll', handleObserver);

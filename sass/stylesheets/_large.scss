@@ -92,7 +92,7 @@
 					content: "";
 					position: absolute;
 					width: 0;
-					bottom: -25%;
+					bottom: -35%;
 					border-bottom: 2px solid white;
 				}
 
@@ -106,7 +106,7 @@
 
 				a:hover::before,
 				a:hover::after {
-					width: 47%;
+					width: 40%;
 				}
 				a,
 				a::after,
@@ -395,10 +395,10 @@
 
 @media (min-width: 1111px) {
 	.services {
-		padding-bottom: 180px;
+		padding-bottom: 160px;
 
 		.title__box {
-			margin-bottom: 60px;
+			margin-bottom: 50px;
 		}
 		.container {
 			flex-direction: row;

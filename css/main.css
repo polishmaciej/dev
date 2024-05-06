@@ -246,9 +246,10 @@ body {
   color: #fff;
   text-decoration: none;
   margin: 0.8em 0;
-  padding: 0.5em 0.6em;
+  padding: 0.6em 0.6em;
   font-size: 3rem;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 .nav__item::before {
   position: absolute;
@@ -280,7 +281,7 @@ body {
   color: #fff;
   letter-spacing: 2px;
   background-color: #232cdd;
-  margin: 0.8em 0;
+  margin: 0 auto;
   display: block;
   padding: 9px 0px;
   width: 172px;
@@ -339,6 +340,12 @@ body {
   width: 30%;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: rgb(29, 29, 29);
 }
 
 .header {
@@ -466,7 +473,7 @@ body {
   background: linear-gradient(315deg, hsl(255, 77%, 8%) 0%, hsl(255, 73%, 10%) 55%, hsl(254, 78%, 13%) 100%);
   background: -webkit-linear-gradient(315deg, hsl(255, 77%, 8%) 0%, hsl(255, 73%, 10%) 55%, hsl(254, 78%, 13%) 100%);
   padding: 0px 25px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 .am .title__box {
   display: -webkit-box;
@@ -555,7 +562,7 @@ body {
 }
 .am .aboutMe-desc-box-desc {
   font-size: 18px;
-  line-height: 25px;
+  line-height: 23px;
   margin-left: 25px;
 }
 .am .aboutMe-desc-box-desc .bold-text {
@@ -572,9 +579,9 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
-  width: 330px;
+  width: 320px;
 }
 .am .aboutMe-desc-desc .bold {
   font-weight: 500;
@@ -695,7 +702,7 @@ body {
   margin: 0;
 }
 .portfolio .title__box-title {
-  font-size: 3.1rem;
+  font-size: 3.4rem;
   font-weight: 500;
   position: relative;
 }
@@ -980,7 +987,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
+  background-color: rgb(236, 236, 236);
   width: 320px;
   height: 215px;
   border-radius: 15px;
@@ -1511,6 +1518,9 @@ body {
   .contact .title__box-title {
     font-size: 35px;
   }
+  .services .container .serviceBox {
+    background-color: white;
+  }
 }
 @media (min-width: 567px) {
   .header-box {
@@ -1697,7 +1707,7 @@ body {
 }
 @media (min-width: 567px) {
   .header-box {
-    margin-left: 12%;
+    margin-left: 7%;
   }
 }
 @media (min-width: 768px) {
@@ -1969,9 +1979,6 @@ body {
   .services .container .serviceBox__title-text {
     font-size: 25px;
   }
-  .services .container .serviceBox {
-    margin-bottom: 22px;
-  }
   .footer {
     padding: 14px 85px 14px;
   }
@@ -2077,7 +2084,7 @@ body {
     content: "";
     position: absolute;
     width: 0;
-    bottom: -25%;
+    bottom: -35%;
     border-bottom: 2px solid white;
   }
   .navbar__links-items a::before {
@@ -2088,7 +2095,7 @@ body {
   }
   .navbar__links-items a:hover::before,
   .navbar__links-items a:hover::after {
-    width: 47%;
+    width: 40%;
   }
   .navbar__links-items a,
   .navbar__links-items a::after,
@@ -2375,10 +2382,10 @@ body {
 }
 @media (min-width: 1111px) {
   .services {
-    padding-bottom: 180px;
+    padding-bottom: 160px;
   }
   .services .title__box {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .services .container {
     -webkit-box-orient: horizontal;
