@@ -1,10 +1,8 @@
 const nav = document.querySelector(".nav");
 const navBtn = document.querySelector(".burger-btn");
 const allNavItems = document.querySelectorAll(".nav__item");
-const navBtnBars = document.querySelector(".burger-btn__bars")
-
-
-
+const navBtnBars = document.querySelector(".burger-btn__bars");
+const allSections = document.querySelectorAll(".section");
 
 const handleNav = () => {
 	nav.classList.toggle("nav--active");
@@ -30,7 +28,6 @@ const handleNavItemsAnimation = () => {
 
 navBtn.addEventListener("click", handleNav);
 
-
 document.addEventListener("DOMContentLoaded", function () {
 	const nav = document.querySelector(".navbar");
 
@@ -45,18 +42,22 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", addShadow);
 });
 
-
 const handleObserver = () => {
-    const currentSection = window.scrollY;
-    const allSections = document.querySelectorAll('.section'); // Tutaj ustaw odpowiedni selektor dla sekcji na twojej stronie
+	const currentSection = window.scrollY;
 
-    allSections.forEach(section => {
-        if (section.classList.contains('white-section') && section.offsetTop <= currentSection + 60) {
-            navBtnBars.classList.add('black-bars-color');
-        } else if (!section.classList.contains('white-section') && section.offsetTop <= currentSection + 60) {
-            navBtnBars.classList.remove('black-bars-color');
-        }
-    });
+	allSections.forEach((section) => {
+		if (
+			section.classList.contains("white-section") &&
+			section.offsetTop <= currentSection + 60
+		) {
+			navBtnBars.classList.add("black-bars-color");
+		} else if (
+			!section.classList.contains("white-section") &&
+			section.offsetTop <= currentSection + 60
+		) {
+			navBtnBars.classList.remove("black-bars-color");
+		}
+	});
 };
 
-window.addEventListener('scroll', handleObserver);
+window.addEventListener("scroll", handleObserver);
