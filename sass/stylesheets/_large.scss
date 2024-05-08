@@ -255,7 +255,7 @@
 						font-size: 21px;
 						line-height: 27px;
 						width: 420px;
-						margin-top: 20px;
+						margin-top: 45px;
 						margin-right: 13px;
 					}
 				}
@@ -266,7 +266,7 @@
 				}
 				&-desc {
 					position: absolute;
-					bottom: 5px;
+					bottom: 20px;
 					right: 13px;
 					font-size: 15px;
 					font-weight: 200;
@@ -542,10 +542,11 @@
 					align-items: start;
 
 					&-desc {
-						font-size: 22px;
+						font-size: 24px;
 						line-height: 27px;
 						width: 450px;
-						margin-top: 25px;
+						margin-top: 42px;
+						font-weight: 500;
 					}
 				}
 				img {
@@ -554,7 +555,7 @@
 				}
 				&-desc {
 					position: absolute;
-					bottom: -1px;
+					bottom: 20px;
 					font-size: 16px;
 					font-weight: 300;
 					text-align: left;
