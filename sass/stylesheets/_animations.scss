@@ -62,14 +62,4 @@
 		transform: translateX(100%);
 	}
 }
-@keyframes img_move {
-	0% {
-		transform: translateY(0);
-	  }
-	  50% {
-		transform: translateY(-30px);
-	  }
-	  100% {
-		transform: translateY(0);
-	  }
-}
+
