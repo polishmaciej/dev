@@ -168,7 +168,7 @@ body {
 }
 .black-bars-color,
 .black-bars-color::after,
-.black-bars-color::before{
+.black-bars-color::before {
 	background-color: rgb(29, 29, 29);
 }
 //////////////
@@ -270,6 +270,11 @@ body {
 	}
 }
 //ABOUT ME
+.aboutMe-desc-desc-lg,
+.aboutMe-desc-desc-mid-lg,
+.aboutMe-desc-desc-mid {
+	display: none;
+}
 .am {
 	background: hsla(255, 77%, 8%, 1);
 	color: white;
@@ -340,34 +345,47 @@ body {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+
+			&-title {
+				font-size: 22px;
+				font-weight: 500;
+				margin-top: 40px;
+				margin-bottom: 3px;
+				margin-left: 12px;
+			}
 			&-box {
 				display: flex;
 				flex-direction: row;
 				align-items: center;
+
 				&-desc {
-					font-size: 18px;
-					line-height: 23px;
-					margin-left: 25px;
-					.bold-text {
-						font-weight: 600;
+					display: none;
+					&-phone {
+						font-size: 17px;
+						font-weight: 400;
+						margin-left: 20px;
 					}
 				}
 				img {
-					border-radius: 50%;
+					border-radius: 32px;
 					object-fit: cover;
-					width: 117px;
-					height: 117px;
+					width: 98px;
+					height: 98px;
+					margin-left: 10px;
 				}
 			}
 			&-desc {
-				margin-top: 30px;
+				margin-top: 7px;
 				margin-bottom: 30px;
 				font-weight: 200;
-				font-size: 17px;
-				text-align: center;
-				width: 320px;
+				font-size: 15px;
+				margin-left: 12px;
+
 				.bold {
 					font-weight: 500;
+				}
+				.desktop {
+					display: none;
 				}
 			}
 		}
@@ -400,14 +418,7 @@ body {
 		&-action {
 			display: flex;
 			flex-direction: column;
-			margin-top: 30px;
 			text-align: center;
-			&-text {
-				font-size: 20px;
-				font-weight: 500;
-				line-height: 25px;
-				letter-spacing: 1px;
-			}
 			&-btns {
 				display: flex;
 				flex-direction: row;
@@ -415,7 +426,7 @@ body {
 				align-items: center;
 				text-align: center;
 				column-gap: 15px;
-				margin-top: 18px;
+				margin-top: 10px;
 				.btn1 {
 					padding: 6px 36px;
 					border-radius: 15px;
@@ -683,8 +694,8 @@ body {
 			display: flex;
 			flex-direction: column;
 			background-color: rgb(236, 236, 236);
-			width: 320px;
-			height: 215px;
+			width: 300px;
+			height: 205px;
 			border-radius: 15px;
 			z-index: 2;
 			padding: 30px;
@@ -706,12 +717,12 @@ body {
 				margin-bottom: 17px;
 				align-items: center;
 				&-text {
-					font-size: 24px;
+					font-size: 22px;
 					font-weight: 600;
 					margin-left: 10px;
 				}
 				.fa-dev {
-					font-size: 36px;
+					font-size: 33px;
 					color: $bright-blue;
 				}
 				.fa-wand-magic-sparkles {
@@ -729,7 +740,7 @@ body {
 			&__items {
 				display: flex;
 				flex-direction: column;
-				row-gap: 7px;
+				row-gap: 8px;
 				.serviceBox__item {
 					list-style-type: none;
 					position: relative;
@@ -1005,6 +1016,11 @@ body {
 	i {
 		font-size: 25px;
 		color: white;
+		transition: scale 0.4s;
+
+		&:hover {
+			scale: 1.14;
+		}
 	}
 	&__logo {
 		justify-content: flex-start;
