@@ -596,7 +596,7 @@
 	.portfolio {
 		background-color: #ececec;
 		width: 100%;
-		padding-bottom: 75px;
+		padding-bottom: 95px;
 		.title__box {
 			display: flex;
 			flex-direction: column;
@@ -975,17 +975,17 @@
 	}
 	.portfolio {
 		.container {
-			column-gap: 150px;
-			margin-top: 20px;
+			column-gap: 160px;
+			margin-top: 50px;
 			.col2 {
-				padding-top: 130px;
+				padding-top: 160px;
 			}
 			.col1,
 			.col2 {
 				display: flex;
 				flex-direction: column;
 				width: 475px;
-				row-gap: 75px;
+				row-gap: 95px;
 				.portfolio__box {
 					margin-top: 45px;
 					width: 475px;

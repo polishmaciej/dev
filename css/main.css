@@ -2629,7 +2629,7 @@ body {
   .portfolio {
     background-color: #ececec;
     width: 100%;
-    padding-bottom: 75px;
+    padding-bottom: 95px;
   }
   .portfolio .title__box {
     display: -webkit-box;
@@ -3058,13 +3058,13 @@ body {
     border-radius: 19px;
   }
   .portfolio .container {
-    -webkit-column-gap: 150px;
-       -moz-column-gap: 150px;
-            column-gap: 150px;
-    margin-top: 20px;
+    -webkit-column-gap: 160px;
+       -moz-column-gap: 160px;
+            column-gap: 160px;
+    margin-top: 50px;
   }
   .portfolio .container .col2 {
-    padding-top: 130px;
+    padding-top: 160px;
   }
   .portfolio .container .col1,
   .portfolio .container .col2 {
@@ -3076,7 +3076,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 475px;
-    row-gap: 75px;
+    row-gap: 95px;
   }
   .portfolio .container .col1 .portfolio__box,
   .portfolio .container .col2 .portfolio__box {

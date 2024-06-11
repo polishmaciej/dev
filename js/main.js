@@ -61,3 +61,8 @@ const handleObserver = () => {
 };
 
 window.addEventListener("scroll", handleObserver);
+
+
+AOS.init({
+	once: true,
+});
