@@ -63,6 +63,8 @@ const handleObserver = () => {
 window.addEventListener("scroll", handleObserver);
 
 
-AOS.init({
-	once: true,
-});
+document.addEventListener('DOMContentLoaded', function() {
+	AOS.init({
+		once: true,
+	});
+  });
