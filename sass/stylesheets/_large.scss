@@ -172,6 +172,10 @@
 		right: -10px;
 		width: 445px;
 		font-size: 17px;
+		font-weight: 200;
+		.bold-text {
+			font-weight: 500;
+		}
 	}
 	.am {
 		padding-bottom: 45px;
@@ -185,7 +189,7 @@
 				margin-bottom: -5px;
 			}
 			&-title {
-				font-size: 4.2rem;
+				font-size: 4.5rem;
 				font-weight: 500;
 
 				&::before {
@@ -403,10 +407,16 @@
 	.services .title__box-title,
 	.reviews .title__box-title,
 	.contact .title__box-title {
-		font-size: 52px;
+		font-size: 46px;
 	}
 	.reviews .title__box {
-		padding-bottom: 80px;
+		padding-bottom: 90px;
+	}
+	.reviews {
+		padding-bottom: 95px;
+	}
+	.am .aboutMe-content-phone {
+		margin: 0;
 	}
 }
 
@@ -477,8 +487,9 @@
 	}
 	.aboutMe-desc-desc-lg {
 		position: absolute;
-		bottom: 0;
-		right: -10px;
+		font-weight: 200;
+		bottom: 30px;
+		right: -30px;
 		width: 570px;
 	}
 	.am {
@@ -572,14 +583,17 @@
 					&-desc {
 						font-size: 22px;
 						line-height: 27px;
-						width: 530px;
-						margin-top: 25px;
+						width: 520px;
+						margin-top: 35px;
 						font-weight: 500;
+						margin-left: 0px;
+						margin-right: 20px;
 					}
 				}
 				img {
-					width: 230px;
-					height: 230px;
+					width: 240px;
+					height: 240px;
+					margin-left: 0;
 				}
 				&-desc {
 					position: absolute;
@@ -683,11 +697,6 @@
 			&-parag {
 				font-size: 1.7rem;
 				font-weight: 300;
-			}
-			&-title {
-				font-size: 4.8rem;
-				font-weight: 500;
-				position: relative;
 			}
 		}
 		&_container {
@@ -918,7 +927,16 @@
 			}
 		}
 	}
-	
+	.am .aboutMe-content-phone {
+		margin: 0;
+	}
+	.portfolio .title__box .title__box-title,
+	.workflow .title__box-title,
+	.services .title__box-title,
+	.reviews .title__box-title,
+	.contact .title__box-title {
+		font-size: 47px;
+	}
 }
 
 @media (min-width: 1400px) {
@@ -1023,7 +1041,7 @@
 	}
 
 	.am {
-		padding-bottom: 70px;
+		padding-bottom: 80px;
 		.title__box {
 			color: white;
 			padding-top: 45px;
@@ -1117,8 +1135,9 @@
 			&-desc {
 				flex-direction: row;
 				position: relative;
-				margin-top: 35px;
+				margin-top: 50px;
 				margin-left: 100px;
+				margin-bottom: 60px;
 				&-box {
 					position: relative;
 					width: 1050px;
@@ -1132,7 +1151,7 @@
 						line-height: 27px;
 						width: 680px;
 						margin-top: 50px;
-						margin-left: 0;
+						margin-left: 50px;
 
 						.bold-text {
 							font-weight: 600;
@@ -1170,9 +1189,9 @@
 	}
 
 	.workflow {
-		padding: 0 5px 160px 13px;
+		padding: 0 5px 165px 13px;
 		.title__box {
-			margin-bottom: 40px;
+			margin-bottom: 45px;
 			&-parag {
 				font-size: 1.8rem;
 				font-weight: 300;
@@ -1224,5 +1243,21 @@
 				}
 			}
 		}
+	}
+	.am .aboutMe-content-phone {
+		margin: 0;
+	}
+	.am .title__box-title {
+		font-size: 52px;
+	}
+	.portfolio .title__box .title__box-title {
+		font-size: 54px;
+	}
+
+	.workflow .title__box-title,
+	.services .title__box-title,
+	.reviews .title__box-title,
+	.contact .title__box-title {
+		font-size: 49px;
 	}
 }

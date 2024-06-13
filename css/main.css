@@ -170,6 +170,7 @@ body {
   font-size: 1.6rem;
   background-color: white;
   color: black;
+  overflow-x: hidden;
 }
 
 .title__box-title::before {
@@ -396,7 +397,7 @@ body {
   text-wrap: wrap;
 }
 .header-box .text-container .header__heading-sm {
-  font-size: 29px;
+  font-size: 27px;
   font-weight: 300;
   line-height: 29px;
   width: 360px;
@@ -406,10 +407,10 @@ body {
   font-weight: 600;
 }
 .header-box .text-container .header-text {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 200;
   line-height: 20px;
-  width: 350px;
+  width: 330px;
 }
 .header-box .text-container .header-text-bigScreen {
   display: none;
@@ -604,55 +605,8 @@ body {
 .am .aboutMe-content-box-text .bold-text {
   font-weight: 400;
 }
-.am .aboutMe-action {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
 .am .aboutMe-action-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-column-gap: 15px;
-     -moz-column-gap: 15px;
-          column-gap: 15px;
-  margin-top: 10px;
-}
-.am .aboutMe-action-btns .btn1 {
-  padding: 6px 36px;
-  border-radius: 15px;
-  font-size: 19px;
-  font-weight: 500;
-  background-color: #232cdd;
-  border: none;
-  color: white;
-  text-decoration: none;
-}
-.am .aboutMe-action-btns .btn2 {
-  padding: 6px 32px;
-  border-radius: 15px;
-  font-size: 19px;
-  font-weight: 500;
-  background-color: transparent;
-  border: 1px #232cdd solid;
-  color: white;
-  text-decoration: none;
+  display: none;
 }
 
 .portfolio {
@@ -683,7 +637,7 @@ body {
   margin: 0;
 }
 .portfolio .title__box-title {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   font-weight: 500;
   position: relative;
 }
@@ -706,12 +660,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 60px;
-  width: 338px;
+  width: 320px;
   margin: 0 auto;
   padding-top: 40px;
 }
 .container .portfolio__box-img {
-  width: 338px;
+  width: 320px;
 }
 .container .portfolio__box-title {
   font-size: 2.3rem;
@@ -720,10 +674,10 @@ body {
   font-weight: 600;
 }
 .container .portfolio__box-text {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #111111;
   margin-left: 9px;
-  width: 320px;
+  width: 310px;
   margin-bottom: 17px;
   margin-top: 6px;
   line-height: 23px;
@@ -817,7 +771,7 @@ body {
 }
 .workflow_container {
   position: relative;
-  width: 354px;
+  width: 320px;
 }
 .workflow_container .img_box {
   width: 50px;
@@ -930,7 +884,7 @@ body {
   margin: 0;
 }
 .services .title__box-title {
-  font-size: 3.4rem;
+  font-size: 3.5rem;
   font-weight: 500;
   position: relative;
 }
@@ -1256,7 +1210,7 @@ body {
 .s-contact .contact-container .contact-left-text-title {
   font-weight: 500;
   color: white;
-  font-size: 33px;
+  font-size: 34px;
 }
 .s-contact .contact-container .contact-left-text-desc {
   color: white;
@@ -1421,6 +1375,68 @@ body {
           justify-content: space-between;
 }
 
+@media (min-width: 373px) {
+  .header-box .text-container .header__heading-sm {
+    font-size: 29px;
+  }
+  .header-box .text-container .header-text {
+    width: 350px;
+    font-size: 15px;
+  }
+  .workflow_container {
+    width: 355px;
+  }
+  .am .aboutMe-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .am .aboutMe-action-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    margin-top: 10px;
+  }
+  .am .aboutMe-action-btns .btn1 {
+    padding: 7px 36px;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #232cdd;
+    border: none;
+    color: white;
+    text-decoration: none;
+  }
+  .am .aboutMe-action-btns .btn2 {
+    padding: 6px 32px;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px #232cdd solid;
+    color: white;
+    text-decoration: none;
+  }
+}
 @media (min-width: 400px) {
   .header-box {
     margin-left: 10%;
@@ -1443,7 +1459,7 @@ body {
             column-gap: 25px;
   }
   .header-box {
-    margin-left: 5%;
+    margin-left: 3%;
   }
   .header .text-container {
     margin-left: 0px;
@@ -1462,9 +1478,6 @@ body {
   }
   .header .text-container .header__heading-sm-bold {
     font-size: 33px;
-  }
-  .am .aboutMe-desc {
-    width: 100%;
   }
   .am .aboutMe-desc-box {
     width: 100%;
@@ -1501,7 +1514,7 @@ body {
     margin-bottom: -5px;
   }
   .am .title__box-title {
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     font-weight: 500;
   }
   .am .title__box-title::before {
@@ -1528,10 +1541,26 @@ body {
   .services .title__box-title,
   .reviews .title__box-title,
   .contact .title__box-title {
-    font-size: 35px;
+    font-size: 37px;
   }
   .services .container .serviceBox {
     background-color: white;
+  }
+  .container .portfolio__box {
+    width: 340px;
+  }
+  .container .portfolio__box-img {
+    width: 340px;
+  }
+  .container .portfolio__box-text {
+    font-size: 15px;
+    width: 320px;
+  }
+  .am .aboutMe-action-btns {
+    display: none;
+  }
+  .am .aboutMe-action-btns .btn1 {
+    padding: 10px 45px;
   }
 }
 @media (min-width: 567px) {
@@ -1543,14 +1572,14 @@ body {
   }
   .container .portfolio__box {
     margin-top: 45px;
-    width: 390px;
+    width: 370px;
     padding-top: 0px;
   }
   .container .portfolio__box-img {
-    width: 390px;
+    width: 370px;
   }
   .container .portfolio__box-title {
-    font-size: 3rem;
+    font-size: 2.7rem;
     margin-left: 8px;
     font-weight: 600;
     margin-top: 5px;
@@ -1568,7 +1597,7 @@ body {
     color: #fff;
     border: none;
     display: inline;
-    width: 165px;
+    width: 160px;
     margin: 0 auto;
     padding: 11px 12px;
     border-radius: 4px;
@@ -1716,6 +1745,14 @@ body {
     top: -18px;
     left: 1px;
   }
+  .am .title__box-title,
+  .portfolio .title__box .title__box-title,
+  .workflow .title__box-title,
+  .services .title__box-title,
+  .reviews .title__box-title,
+  .contact .title__box-title {
+    font-size: 39px;
+  }
 }
 @media (min-width: 567px) {
   .header-box {
@@ -1852,7 +1889,7 @@ body {
     width: 165px;
     height: 165px;
     border-radius: 50%;
-    margin-left: 45px;
+    margin-left: 35px;
   }
   .am .aboutMe-desc-desc {
     position: absolute;
@@ -1868,18 +1905,22 @@ body {
     font-size: 19px;
     margin-top: 25px;
     margin-left: 0px;
-    margin-right: 5px;
+    margin-right: 15px;
   }
   .aboutMe-desc-desc-mid {
     position: absolute;
     display: block;
     width: 350px;
-    right: 5px;
+    right: 15px;
     bottom: 30px;
     font-size: 15px;
+    font-weight: 200;
   }
   .aboutMe-desc-desc-mid .bold-text {
     font-weight: 500;
+  }
+  .am .aboutMe-content-phone {
+    margin: 0;
   }
   .aboutMe-content-box-text-phone,
   .aboutMe-content-title-phone,
@@ -1889,32 +1930,32 @@ body {
   }
   .container .portfolio__box {
     margin-top: 45px;
-    width: 450px;
+    width: 400px;
     padding-top: 0px;
   }
   .container .portfolio__box-img {
-    width: 450px;
+    width: 400px;
   }
   .container .portfolio__box-title {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     margin-left: 8px;
     font-weight: 600;
     margin-top: 5px;
   }
   .container .portfolio__box-text {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: #111111;
     margin-left: 12px;
-    width: 420px;
+    width: 380px;
     margin-bottom: 17px;
   }
   .container .portfolio__box-btn {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     background-color: #181b61;
     color: #fff;
     border: none;
     display: inline;
-    width: 180px;
+    width: 160px;
     margin: 0 auto;
     padding: 12px 13px;
     border-radius: 5px;
@@ -1941,15 +1982,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .workflow .title__box-parag {
-    font-size: 1.7rem;
-    font-weight: 300;
-  }
-  .workflow .title__box-title {
-    font-size: 3.5rem;
-    font-weight: 500;
-    position: relative;
   }
   .workflow_container {
     position: relative;
@@ -2204,6 +2236,10 @@ body {
     right: -10px;
     width: 445px;
     font-size: 17px;
+    font-weight: 200;
+  }
+  .aboutMe-desc-desc-mid-lg .bold-text {
+    font-weight: 500;
   }
   .am {
     padding-bottom: 45px;
@@ -2219,7 +2255,7 @@ body {
     margin-bottom: -5px;
   }
   .am .title__box-title {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
     font-weight: 500;
   }
   .am .title__box-title::before {
@@ -2431,10 +2467,16 @@ body {
   .services .title__box-title,
   .reviews .title__box-title,
   .contact .title__box-title {
-    font-size: 52px;
+    font-size: 46px;
   }
   .reviews .title__box {
-    padding-bottom: 80px;
+    padding-bottom: 90px;
+  }
+  .reviews {
+    padding-bottom: 95px;
+  }
+  .am .aboutMe-content-phone {
+    margin: 0;
   }
 }
 @media (min-width: 1111px) {
@@ -2501,8 +2543,9 @@ body {
   }
   .aboutMe-desc-desc-lg {
     position: absolute;
-    bottom: 0;
-    right: -10px;
+    font-weight: 200;
+    bottom: 30px;
+    right: -30px;
     width: 570px;
   }
   .am {
@@ -2610,13 +2653,16 @@ body {
   .am .aboutMe-desc-box-desc {
     font-size: 22px;
     line-height: 27px;
-    width: 530px;
-    margin-top: 25px;
+    width: 520px;
+    margin-top: 35px;
     font-weight: 500;
+    margin-left: 0px;
+    margin-right: 20px;
   }
   .am .aboutMe-desc img {
-    width: 230px;
-    height: 230px;
+    width: 240px;
+    height: 240px;
+    margin-left: 0;
   }
   .am .aboutMe-desc-desc {
     position: absolute;
@@ -2746,11 +2792,6 @@ body {
   .workflow .title__box-parag {
     font-size: 1.7rem;
     font-weight: 300;
-  }
-  .workflow .title__box-title {
-    font-size: 4.8rem;
-    font-weight: 500;
-    position: relative;
   }
   .workflow_container {
     position: relative;
@@ -2997,6 +3038,16 @@ body {
     font-size: 19px;
     font-weight: 500;
   }
+  .am .aboutMe-content-phone {
+    margin: 0;
+  }
+  .portfolio .title__box .title__box-title,
+  .workflow .title__box-title,
+  .services .title__box-title,
+  .reviews .title__box-title,
+  .contact .title__box-title {
+    font-size: 47px;
+  }
 }
 @media (min-width: 1400px) {
   .header .header__shadow {
@@ -3117,7 +3168,7 @@ body {
     display: none;
   }
   .am {
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
   .am .title__box {
     color: white;
@@ -3215,8 +3266,9 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     position: relative;
-    margin-top: 35px;
+    margin-top: 50px;
     margin-left: 100px;
+    margin-bottom: 60px;
   }
   .am .aboutMe-desc-box {
     position: relative;
@@ -3240,7 +3292,7 @@ body {
     line-height: 27px;
     width: 680px;
     margin-top: 50px;
-    margin-left: 0;
+    margin-left: 50px;
   }
   .am .aboutMe-desc-box-desc .bold-text {
     font-weight: 600;
@@ -3272,10 +3324,10 @@ body {
     margin: 0 55px;
   }
   .workflow {
-    padding: 0 5px 160px 13px;
+    padding: 0 5px 165px 13px;
   }
   .workflow .title__box {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
   .workflow .title__box-parag {
     font-size: 1.8rem;
@@ -3321,5 +3373,20 @@ body {
   .workflow_container .text_box-item {
     font-size: 1.8rem;
     margin-top: 11px;
+  }
+  .am .aboutMe-content-phone {
+    margin: 0;
+  }
+  .am .title__box-title {
+    font-size: 52px;
+  }
+  .portfolio .title__box .title__box-title {
+    font-size: 54px;
+  }
+  .workflow .title__box-title,
+  .services .title__box-title,
+  .reviews .title__box-title,
+  .contact .title__box-title {
+    font-size: 49px;
   }
 }/*# sourceMappingURL=main.css.map */

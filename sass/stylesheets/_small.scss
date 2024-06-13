@@ -1,8 +1,54 @@
-
+@media (min-width: 373px) {
+	.header-box .text-container .header__heading-sm {
+		font-size: 29px;
+	}
+	.header-box .text-container .header-text {
+		width: 350px;
+		font-size: 15px;
+	}
+	.workflow_container {
+		width: 355px;
+	}
+	.am .aboutMe {
+		&-action {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			&-btns {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				column-gap: 25px;
+				margin-top: 10px;
+				.btn1 {
+					padding: 7px 36px;
+					border-radius: 15px;
+					font-size: 17px;
+					font-weight: 500;
+					background-color: $bright-blue;
+					border: none;
+					color: white;
+					text-decoration: none;
+				}
+				.btn2 {
+					padding: 6px 32px;
+					border-radius: 15px;
+					font-size: 17px;
+					font-weight: 500;
+					background-color: transparent;
+					border: 1px $bright-blue solid;
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 400px) {
 	.header-box {
 		margin-left: 10%;
-		
 	}
 	.am .aboutMe-desc-desc {
 		width: auto;
@@ -20,7 +66,7 @@
 		column-gap: 25px;
 	}
 	.header-box {
-		margin-left: 5%;
+		margin-left: 3%;
 	}
 	.header {
 		.text-container {
@@ -36,15 +82,11 @@
 				font-size: 33px;
 				width: 440px;
 				line-height: 32px;
-				&-bold{
+				&-bold {
 					font-size: 33px;
 				}
 			}
-			
 		}
-	}
-	.am .aboutMe-desc {
-		width: 100%;
 	}
 	.am .aboutMe-desc-box {
 		width: 100%;
@@ -77,7 +119,7 @@
 				margin-bottom: -5px;
 			}
 			&-title {
-				font-size: 3.5rem;
+				font-size: 3.7rem;
 				font-weight: 500;
 
 				&::before {
@@ -107,10 +149,26 @@
 	.services .title__box-title,
 	.reviews .title__box-title,
 	.contact .title__box-title {
-		font-size: 35px;
+		font-size: 37px;
 	}
 	.services .container .serviceBox {
 		background-color: white;
+	}
+	.container .portfolio__box {
+		width: 340px;
+	}
+	.container .portfolio__box-img {
+		width: 340px;
+	}
+	.container .portfolio__box-text {
+		font-size: 15px;
+		width: 320px;
+	}
+	.am .aboutMe-action-btns {
+		display: none;
+	}
+	.am .aboutMe-action-btns .btn1 {
+		padding: 10px 45px;
 	}
 }
 @media (min-width: 567px) {
@@ -123,13 +181,13 @@
 		}
 		.portfolio__box {
 			margin-top: 45px;
-			width: 390px;
+			width: 370px;
 			padding-top: 0px;
 			&-img {
-				width: 390px;
+				width: 370px;
 			}
 			&-title {
-				font-size: 3rem;
+				font-size: 2.7rem;
 				margin-left: 8px;
 				font-weight: 600;
 				margin-top: 5px;
@@ -147,7 +205,7 @@
 				color: $pure-white;
 				border: none;
 				display: inline;
-				width: 165px;
+				width: 160px;
 				margin: 0 auto;
 				padding: 11px 12px;
 				border-radius: 4px;
@@ -263,5 +321,13 @@
 				}
 			}
 		}
+	}
+	.am .title__box-title,
+	.portfolio .title__box .title__box-title,
+	.workflow .title__box-title,
+	.services .title__box-title,
+	.reviews .title__box-title,
+	.contact .title__box-title {
+		font-size: 39px;
 	}
 }

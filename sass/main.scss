@@ -20,6 +20,7 @@ body {
 	font-size: 1.6rem;
 	background-color: white;
 	color: black;
+	overflow-x: hidden;
 }
 .title__box-title::before {
 	bottom: -17% !important;
@@ -226,7 +227,7 @@ body {
 			margin-bottom: 10px;
 			text-wrap: wrap;
 			.header__heading-sm {
-				font-size: 29px;
+				font-size: 27px;
 				font-weight: 300;
 				line-height: 29px;
 				width: 360px;
@@ -236,10 +237,10 @@ body {
 				}
 			}
 			.header-text {
-				font-size: 15px;
+				font-size: 14px;
 				font-weight: 200;
 				line-height: 20px;
-				width: 350px;
+				width: 330px;
 				&-bigScreen {
 					display: none;
 				}
@@ -415,39 +416,8 @@ body {
 				}
 			}
 		}
-		&-action {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			&-btns {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-				column-gap: 15px;
-				margin-top: 10px;
-				.btn1 {
-					padding: 6px 36px;
-					border-radius: 15px;
-					font-size: 19px;
-					font-weight: 500;
-					background-color: $bright-blue;
-					border: none;
-					color: white;
-					text-decoration: none;
-				}
-				.btn2 {
-					padding: 6px 32px;
-					border-radius: 15px;
-					font-size: 19px;
-					font-weight: 500;
-					background-color: transparent;
-					border: 1px $bright-blue solid;
-					color: white;
-					text-decoration: none;
-				}
-			}
+		&-action-btns {
+			display: none;
 		}
 	}
 }
@@ -470,7 +440,7 @@ body {
 			margin: 0;
 		}
 		&-title {
-			font-size: 3.5rem;
+			font-size: 3.6rem;
 			font-weight: 500;
 			position: relative;
 			&::before {
@@ -490,11 +460,11 @@ body {
 		display: flex;
 		flex-direction: column;
 		margin-top: 60px;
-		width: 338px;
+		width: 320px;
 		margin: 0 auto;
 		padding-top: 40px;
 		&-img {
-			width: 338px;
+			width: 320px;
 		}
 		&-title {
 			font-size: 2.3rem;
@@ -503,10 +473,10 @@ body {
 			font-weight: 600;
 		}
 		&-text {
-			font-size: 1.5rem;
+			font-size: 1.4rem;
 			color: #111111;
 			margin-left: 9px;
-			width: 320px;
+			width: 310px;
 			margin-bottom: 17px;
 			margin-top: 6px;
 			line-height: 23px;
@@ -581,7 +551,7 @@ body {
 	}
 	&_container {
 		position: relative;
-		width: 354px;
+		width: 320px;
 		.img_box {
 			width: 50px;
 			display: flex;
@@ -669,7 +639,7 @@ body {
 			margin: 0;
 		}
 		&-title {
-			font-size: 3.4rem;
+			font-size: 3.5rem;
 			font-weight: 500;
 			position: relative;
 			&::before {
@@ -919,7 +889,7 @@ body {
 				&-title {
 					font-weight: 500;
 					color: white;
-					font-size: 33px;
+					font-size: 34px;
 				}
 				&-desc {
 					color: white;
